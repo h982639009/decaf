@@ -1,0 +1,117 @@
+line1,index0: keywords(class)
+line1,index1: identifier
+line1,index2: delimiter
+
+line2,index0: keywords(int)
+line2,index1: identifier
+line2,index2: delimiter
+
+line3,index0: keywords(void)
+line3,index1: identifier
+line3,index2: operator
+line3,index3: keywords(int)
+line3,index4: identifier
+line3,index5: operator
+line3,index6: delimiter
+
+line4,index0: keywords(int)
+line4,index1: identifier
+line4,index2: delimiter
+
+line5,index0: keywords(for)
+line5,index1: operator
+line5,index2: identifier
+line5,index3: operator
+line5,index4: Constant
+line5,index5: delimiter
+line5,index6: identifier
+line5,index7: operator
+line5,index8: identifier
+line5,index9: delimiter
+line5,index10: identifier
+line5,index11: operator
+line5,index12: identifier
+line5,index13: Constant
+line5,index14: operator
+line5,index15: delimiter
+
+line6,index0: keywords(Print)
+line6,index1: operator
+line6,index2: stringConstant
+line6,index3: operator
+line6,index4: delimiter
+
+line7,index0: delimiter
+
+line8,index0: delimiter
+
+line9,index0: delimiter
+
+line10: comment
+
+line11,index0: keywords(class)
+line11,index1: identifier
+line11,index2: keywords(extends)
+line11,index3: identifier
+line11,index4: delimiter
+
+line12,index0: keywords(int)
+line12,index1: identifier
+line12,index2: delimiter
+
+line13,index0: keywords(void)
+line13,index1: identifier
+line13,index2: operator
+line13,index3: keywords(int)
+line13,index4: identifier
+line13,index5: operator
+line13,index6: delimiter
+
+line14,index0: keywords(Print)
+line14,index1: operator
+line14,index2: stringConstant
+line14,index3: operator
+line14,index4: delimiter
+
+line15,index0: delimiter
+
+line16,index0: delimiter
+
+
+line18,index0: keywords(class)
+line18,index1: identifier
+line18,index2: delimiter
+
+line19,index0: keywords(static)
+line19,index1: keywords(void)
+line19,index2: identifier
+line19,index3: operator
+line19,index4: operator
+line19,index5: delimiter
+
+line20,index0: keywords(class)
+line20,index1: identifier
+line20,index2: identifier
+line20,index3: delimiter
+
+line21,index0: identifier
+line21,index1: operator
+line21,index2: keywords(new)
+line21,index3: identifier
+line21,index4: operator
+line21,index5: operator
+line21,index6: delimiter
+
+line22,index0: identifier
+line22,index1: operator
+line22,index2: identifier
+line22,index3: operator
+line22,index4: Constant
+line22,index5: operator
+line22,index6: delimiter
+
+line23,index0: delimiter
+
+line24,index0: delimiter
+
+

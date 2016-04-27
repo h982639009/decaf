@@ -1476,7 +1476,7 @@ yyreduce:
 
   case 9:
 #line 68 "grammer.y" /* yacc.c:1646  */
-    {(yyval.ast)=newNode();setType((yyval.ast),"void");}
+    {(yyval.ast)=newNode();setType((yyval.ast),"void");printf("\ncon:%s\n",((yyval.ast))->typeName);}
 #line 1481 "grammer.tab.c" /* yacc.c:1646  */
     break;
 
@@ -1494,7 +1494,7 @@ yyreduce:
 
   case 12:
 #line 74 "grammer.y" /* yacc.c:1646  */
-    {(yyval.ast)=newNode();addChild((yyval.ast),(yyvsp[0].ast));setType((yyval.ast),"formals");}
+    {(yyval.ast)=newNode();addChild((yyval.ast),(yyvsp[0].ast));setType((yyval.ast),"formals");printf("\ncon:%s\n",((yyval.ast))->typeName);}
 #line 1499 "grammer.tab.c" /* yacc.c:1646  */
     break;
 
@@ -1530,7 +1530,7 @@ yyreduce:
 
   case 18:
 #line 90 "grammer.y" /* yacc.c:1646  */
-    {(yyval.ast)=newNode();addChild((yyval.ast),(yyvsp[-5].ast));addChild((yyval.ast),(yyvsp[-2].ast));addChild((yyval.ast),(yyvsp[0].ast));setType((yyval.ast),"functiondef_not_static");}
+    {(yyval.ast)=newNode();addChild((yyval.ast),(yyvsp[-5].ast));addChild((yyval.ast),(yyvsp[-2].ast));addChild((yyval.ast),(yyvsp[0].ast));setType((yyval.ast),"functiondef_not_static");printf("\ncon:%d\n",((yyval.ast))->childnum);if(((yyval.ast))->list==NULL)printf("\ncon:NULL POINTER\n");}
 #line 1535 "grammer.tab.c" /* yacc.c:1646  */
     break;
 
@@ -1584,7 +1584,7 @@ yyreduce:
 
   case 27:
 #line 114 "grammer.y" /* yacc.c:1646  */
-    {(yyval.ast)=newNode();addChild((yyval.ast),(yyvsp[-1].ast));setType((yyval.ast),"stmtblock");}
+    {(yyval.ast)=newNode();addChild((yyval.ast),(yyvsp[-1].ast));setType((yyval.ast),"stmtblock");printf("\ncon:%s\n",((yyval.ast))->typeName);}
 #line 1589 "grammer.tab.c" /* yacc.c:1646  */
     break;
 

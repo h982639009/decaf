@@ -10,6 +10,10 @@ struct Node* newNode(){
 	struct Node* node = (struct Node *)malloc(sizeof(struct Node));
 	node->childnum=0;
 	node->list = (struct Node *)malloc(sizeof(struct Node)*CHILD_NUM_MAX);
+	if(node->list==NULL){
+		printf("\nERROR!!!\n");
+	}
+	return node;//,,, forget to add 
 }
 
 void addChild(struct Node* root,struct Node* child){

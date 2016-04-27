@@ -65,13 +65,13 @@ type
     :INT {$$=newNode();setType($$,"int");}
     |BOOL {$$=newNode();setType($$,"bool");}
     |STRING {$$=newNode();setType($$,"string");}
-    |VOID {$$=newNode();setType($$,"void");}
+    |VOID {$$=newNode();setType($$,"void");printf("\ncon:%s\n",($$)->typeName);}
     |CLASS IDENTIFIER {$$=newNode();setType($$,"class");}
     |type '['']'    {addChild($$,$1);}
     ;
 
 formals
-    :formals_not_empty {$$=newNode();addChild($$,$1);setType($$,"formals");}
+    :formals_not_empty {$$=newNode();addChild($$,$1);setType($$,"formals");printf("\ncon:%s\n",($$)->typeName);}
     |  {$$=newNode();setType($$,"formals");}
     ;
 
@@ -87,7 +87,7 @@ functiondef
     ;
 
 functiondef_not_static
-    :type IDENTIFIER '(' formals ')' stmtblock {$$=newNode();addChild($$,$1);addChild($$,$4);addChild($$,$6);setType($$,"functiondef_not_static");}
+    :type IDENTIFIER '(' formals ')' stmtblock {$$=newNode();addChild($$,$1);addChild($$,$4);addChild($$,$6);setType($$,"functiondef_not_static");printf("\ncon:%d\n",($$)->childnum);if(($$)->list==NULL)printf("\ncon:NULL POINTER\n");}
     ;
 
 classdef
@@ -111,7 +111,7 @@ field
     ;
 
 stmtblock
-    :'{' stmts '}'  {$$=newNode();addChild($$,$2);setType($$,"stmtblock");}
+    :'{' stmts '}'  {$$=newNode();addChild($$,$2);setType($$,"stmtblock");printf("\ncon:%s\n",($$)->typeName);}
     ;
 
 stmts
